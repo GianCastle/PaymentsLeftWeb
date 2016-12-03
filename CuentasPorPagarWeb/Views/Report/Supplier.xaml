@@ -1,0 +1,25 @@
+﻿<Window x:Class="CuentasPorPagar.Views.Report.Supplier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       
+        xmlns:local="clr-namespace:CuentasPorPagar.Views.Report"
+        mc:Ignorable="d"
+        
+        Title="Reportes de Suplidores" Height="386.4" Width="728.2" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid x:Name="SupplierDgv" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Height="165" Width="700" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="button" Content="Exportar" HorizontalAlignment="Left" Margin="5,310,0,0" VerticalAlignment="Top" Width="95" Click="button_Click"/>
+        <Button x:Name="ExitBTN"
+                Width="74"
+                Height="32"
+                Margin="636,310,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="SALIR"
+                FontWeight="Bold"
+                RenderTransformOrigin="0.405,2.25" Click="ExitBTN_Click" />
+
+    </Grid>
+</Window>
