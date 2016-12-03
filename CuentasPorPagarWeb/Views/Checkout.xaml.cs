@@ -106,8 +106,8 @@ namespace CuentasPorPagar.Views
                     var json = new JavaScriptSerializer().Serialize(accountEntry);
                     var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-                    var response = await client.PostAsync("ContabilidadWS/webresources/ContabilidadWS/registrarAsientos", stringContent);
-                    MessageBox.Show(response.ToString());
+                    var response =  client.PostAsync("ContabilidadWS/webresources/ContabilidadWS/registrarAsientos", stringContent).Result;
+                    MessageBox.Show(response.Content.ReadAsStringAsync().Result);
                 }
                 this.Close();
             }
